@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculation (Cálculo do IMC)</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/favicon-32x32.png">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="title">Calculadora - IMC (BMI)</div> 
+            <div class="inputArea">
+                <div class="input">
+                    <label for="idName">Nome:</label>
+                    <input type="text" name="name" id="name" placeholder="ex.: Ana">
+                </div>
+                <div class="input">
+                    <label for="idHeight">Altura:</label>
+                    <input type="text" name="height" id="height" placeholder="ex.: 1,70 m">
+                </div>
+                <div class="input">
+                    <label for="idWeight">Peso:</label>
+                    <input type="text" name="weight" id="weight" placeholder="ex.: 69,7 kg">
+                </div>
+            </div>
+
+            <button type="submit" id="calcButton" onclick="calculateBMI()">Calcular</button>
+    
+            <div id="result"></div>
+        </div>
+    </main>
+</body>
+
+<script src="script.js"></script>
+</html>
